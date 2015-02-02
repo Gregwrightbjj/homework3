@@ -1,0 +1,309 @@
+.h1{
+	width:100%;
+	
+}
+.container{
+display: inline-block;
+width: 35%;
+margin-left: 300px;
+margin-top: 50px;
+
+}
+.all{
+	margin-top:20px;
+}
+.title{
+display:inline-block;
+border:solid 1px white;
+
+
+}
+.title img{
+	width: 18px;
+}
+.on{
+	margin-left: 20px;
+}
+.titlep{
+	color: rgb(6,50,81);
+	font-size:40px;
+	margin-top: 0px;
+	font-family:Open Sans;
+
+}
+.thediv{
+	margin-top:-54px;
+}
+.adiv{
+	padding-top: 30px;
+	color:grey;
+}
+
+.Anne{
+	color: rgb(76,140,193);
+	font-family: Open Sans;
+	font-size: 18px;
+
+}
+.date{
+	display: inline-block;
+	color:rgb(185,198,207);
+}
+.date1{
+	color:rgb(185,198,207);
+	text-decoration: underline;
+}
+.sidebar{
+	border:solid 1px white;
+	display:inline-block;
+	width: 20%;
+	padding-left: 60px;
+	vertical-align: top;
+	margin-top: 50px;
+	padding-top: 8px;
+	font-family:Open Sans;
+
+	
+}
+.ad{
+	width: 79%;
+	padding-top: 19px;
+}
+.avatar1{
+	padding-left: 40%;
+	height: 55px;
+}
+.Anne2{
+	color: rgb(76,140,193);
+	text-align: center;
+
+}
+.twitter{
+	text-align: center;
+	color:rgb(185,198,207);
+	margin-top: -18px;
+}
+
+.about{
+	text-align: right;
+	margin-bottom: 5px;
+	color: gray;
+	margin-top: 0px;
+	margin-right: 59px
+}
+.title3{
+	color: rgb(76,140,193);
+}
+.title2{
+	text-align: left;
+	color: rgb(76,140,193);
+	border-left: solid 1px gray;
+	font-size: 20px;
+	padding-left: 8px;
+	padding: 15px;
+}
+a{
+	color: rgb(76,140,193);
+}
+.title4{
+	text-align: center;
+	font-size:40px;
+	color: rgb(6,50,81);
+	border-top: solid 1px lightgray;
+	padding: 30px;
+	margin-top: 20px;
+
+}
+footer{
+	font-size:0px;
+}
+
+.pic{
+	display: inline-block;
+	width: 25%;
+	position:relative;
+}
+
+.pic img {
+	width: 100%;
+}
+.copyright{
+	background-color: rgb(8,52,82);
+	color:rgb(161,177,189);
+	font-size: 12px;
+	text-align: center;
+}
+.tiy{
+	margin-right: 474px;
+
+}
+.pp{
+	color:gray;
+	font-family:Open Sans;
+	font-size: 17px;
+}
+.pb{
+	color:lightgray;
+}
+.pe{
+	text-decoration:underline;
+}
+.white{
+	color:white;
+	margin-top: -10px;
+}
+.a{
+	border:solid 1px ;
+	background-color:lightgray;
+	color:white;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-bottom: 1px;
+	padding-right: 3px;
+
+} 
+.b{
+	border:solid 1px ;
+	background-color:lightgray;
+	color:white;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-bottom: 1px;
+	padding-right: 3px;
+
+}
+.c{
+	border:solid 1px ;
+	background-color:rgb(76,140,193);
+	color:white;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-bottom: 1px;
+	padding-right: 3px;
+
+}
+.iconz img{
+	
+	margin-bottom: -2px;
+}
+.a img{
+	height: 18px;
+	margin-bottom: -4px;
+	background-color:grey;
+	
+}
+.b img{
+	height: 18px;
+	margin-bottom: -4px;
+	background-color:grey;
+
+}
+.c img{
+	height: 18px;
+	margin-bottom: -4px;
+	background-color: rgb(6,50,81);
+}
+.iconz{
+	padding-bottom: 45px;
+}
+
+.overlay{
+	position: absolute;
+	background:rgb(99,160,204);
+	width:100%;
+	height:100%;
+	opacity:0.6;
+	top: 0px;
+
+}
+.overlay:hover{
+	background:none;
+}
+.overlayh{
+	position: absolute;
+	width:100%;
+	height:100%;
+	opacity:1;
+	top: 0px;
+
+}
+header{
+	position:relative;
+}
+.surf{
+	color: white;
+font-size: 98px;
+text-align: center;
+margin-top: 178px;
+font-family:Oswald;
+
+
+}
+.layout{
+	width:100%;
+
+}
+.uu{
+position: absolute;
+top: 16px;
+right: 150px;
+font-family:Oswald;
+}
+.no1{
+	margin-left: 53px;
+}
+.nono{
+	position: absolute;
+top: 23px;
+padding-left: 19px;
+font-family:Oswald;
+color: rgb(6,50,81);
+}
+.surf p{
+	color: rgb(6,50,81);
+font-size: 13px;
+margin-top: -11px;
+}
+.no3 a{
+	text-decoration:none;
+	color:rgb(6,50,81);
+}
+.no3 a:hover{
+	color:yellow;
+}
+.no1{
+	text-decoration:none;
+	color: rgb(6,50,81);
+}
+.no1 :hover{
+	color:yellow;
+}
+.iconz a{
+	text-decoration: none;
+}
+.sidebar a{
+	text-decoration: none;
+	color:lightgray;
+}
+.sidebar a:hover{
+color:yellow;
+}
+
+.surf a{
+	text-decoration:none;
+	color:white;
+}
+.uu a{
+	text-decoration:none;
+	color:rgb(6,50,81);
+}
+.uu a:hover{
+	color: yellow;
+}
+.adiv{
+	font-family:Open Sans;
+	font-size: 17px;
+}
+.thediv a{
+	text-decoration:none;
+}
