@@ -156,9 +156,9 @@ footer{
 	border:solid 1px ;
 	background-color:lightgray;
 	color:white;
-	padding-top: 5px;
+	padding-top: 15px;
 	font-size: 12px;
-	padding-bottom: 1px;
+	padding-bottom: 9px;
 	padding-right: 3px;
 
 } 
@@ -166,19 +166,19 @@ footer{
 	border:solid 1px ;
 	background-color:lightgray;
 	color:white;
-	padding-top: 5px;
+	padding-top: 15px;
 	font-size: 12px;
-	padding-bottom: 1px;
-	padding-right: 3px;
+	padding-bottom: 9px;
+	padding-right: 21px;
 
 }
 .c{
 	border:solid 1px ;
 	background-color:rgb(76,140,193);
 	color:white;
-	padding-top: 5px;
+	padding-top: 15px;
 	font-size: 12px;
-	padding-bottom: 1px;
+	padding-bottom: 9px;
 	padding-right: 3px;
 
 }
@@ -188,20 +188,26 @@ footer{
 }
 .a img{
 	height: 18px;
-	margin-bottom: -4px;
+	margin-bottom: -11px;
 	background-color:grey;
+	padding: 5px;
+	padding-top: 11px;
 	
 }
 .b img{
 	height: 18px;
-	margin-bottom: -4px;
+	margin-bottom: -11px;
 	background-color:grey;
+	padding: 5px;
+	padding-top: 11px;
 
 }
 .c img{
 	height: 18px;
-	margin-bottom: -4px;
+	margin-bottom: -11px;
 	background-color: rgb(6,50,81);
+	padding: 5px;
+	padding-top: 11px;
 }
 .iconz{
 	padding-bottom: 45px;
@@ -309,4 +315,26 @@ color:yellow;
 }
 .copyright{
 	padding-bottom: 14px
+}
+.share-link{
+	display: inline-block;
+	height: 18px;
+}
+.words{
+	position: absolute;
+bottom: 13px;
+left: 20px;
+color: rgb(0,50,83);
+font-size: 30px;
+font-family: 'Oswald', sans-serif;
+
+}
+.wordss{
+	position: absolute;
+bottom: 13px;
+left: 20px;
+color: rgb(0,50,83);
+font-size: 30px;
+font-family: 'Oswald', sans-serif;
+color:white;
 }
