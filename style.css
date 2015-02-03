@@ -132,6 +132,10 @@ footer{
 	color:rgb(161,177,189);
 	font-size: 12px;
 	text-align: center;
+	padding-bottom:33px;
+}
+.copyimg{
+	position:;
 }
 .tiy{
 	margin-right: 474px;
@@ -337,4 +341,15 @@ color: rgb(0,50,83);
 font-size: 30px;
 font-family: 'Oswald', sans-serif;
 color:white;
+}
+.copyright{
+	padding-bottom: 13px;
+padding-top: 9px
+}
+.copyimg{
+	left: 167px;
+	position: absolute;
+}
+.yo{
+	display: inline-block;
 }
