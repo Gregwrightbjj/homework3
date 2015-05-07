@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>The Iron Yard Test Runner</title>
+
+    <link rel="stylesheet" href="http://localhost:3000/libs/mocha.css">
+    <script src="./The Iron Yard Test Runner_files/mocha.js"></script>
+    <script src="./The Iron Yard Test Runner_files/chai.js"></script>
+
+    <style>
+      header {
+        padding:10px;
+        vertical-align: top;
+        position: absolute;
+        top: 15px;
+      }
+
+      header a {
+        text-decoration: none;
+        font-size: 125%;
+        font-family: sans-serif;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="http://localhost:3000/test.html">The Iron Yard Test Runner</a>
+    </header>
+    <div id="mocha"><ul id="mocha-stats"><li class="progress"><canvas width="80" height="80"></canvas></li><li class="passes"><a href="http://localhost:3000/#">passes:</a> <em>14</em></li><li class="failures"><a href="http://localhost:3000/#">failures:</a> <em>5</em></li><li class="duration">duration: <em>0.02</em>s</li></ul><ul id="mocha-report"><li class="suite"><h1><a href="http://localhost:3000/?grep=Array">Array</a></h1><ul><li class="suite"><h1><a href="http://localhost:3000/?grep=Array%20Double">Double</a></h1><ul><li class="test pass fast"><h2>should have a number doubler function<span class="duration">1ms</span> <a href="http://localhost:3000/?grep=Array%20Double%20should%20have%20a%20number%20doubler%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(doubler(<span class="number">2</span>)).to.equal(<span class="number">4</span>);
+      expect(doubler(<span class="number"><span class="number">3</span>.<span class="number">3</span></span>)).to.equal(<span class="number"><span class="number">6</span>.<span class="number">6</span></span>);
+      expect(doubler(<span class="number">0</span>)).to.equal(<span class="number">0</span>);</code></pre></li><li class="test pass fast"><h2>should have an array doubler function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Double%20should%20have%20an%20array%20doubler%20function" class="replay">‣</a></h2><pre style="display: none;"><code>/*
+        JavaScript equality doesn<span class="string">'t really work the way you'</span>d think
+        when it comes to arrays and objects.
+        So we need to change our expect test a little bit here.
+      */
+      
+      expect(arrayDoubler([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])).to.deep.equal([<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>]);
+      expect(arrayDoubler([<span class="number">0</span>, -<span class="number">5</span>, <span class="number">10</span>, <span class="number">3</span>])).to.deep.equal([<span class="number">0</span>, -<span class="number">10</span>, <span class="number">20</span>, <span class="number">6</span>]);
+      expect(arrayDoubler([])).to.deep.equal([]);</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Array%20Divide">Divide</a></h1><ul><li class="test pass fast"><h2>should have a number divide function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Divide%20should%20have%20a%20number%20divide%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(divide(<span class="number">6</span>, <span class="number">3</span>)).to.equal(<span class="number">2</span>);
+      expect(divide(<span class="number">3</span>, <span class="number">1</span>)).to.equal(<span class="number">3</span>);
+      expect(divide(<span class="number">5</span>, <span class="number">1</span>)).to.equal(<span class="number">5</span>);</code></pre></li><li class="test pass fast"><h2>should have an array divide function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Divide%20should%20have%20an%20array%20divide%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(arrayDivide([<span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">12</span>], <span class="number">2</span>)).to.deep.equal([<span class="number"><span class="number">1</span>.<span class="number">5</span></span>, <span class="number">3</span>, <span class="number"><span class="number">4</span>.<span class="number">5</span></span>, <span class="number">6</span>]);
+      expect(arrayDivide([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="number">1</span>)).to.deep.equal([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);
+      expect(arrayDivide([], <span class="number">4</span>)).to.deep.equal([]);</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Array%20Sum">Sum</a></h1><ul><li class="test pass fast"><h2>should have a number sum function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Sum%20should%20have%20a%20number%20sum%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(sum(<span class="number">6</span>, <span class="number">3</span>)).to.equal(<span class="number">9</span>);
+      expect(sum(<span class="number"><span class="number">3</span>.<span class="number">3</span></span>, <span class="number"><span class="number">1</span>.<span class="number">1</span></span>)).to.equal(<span class="number"><span class="number">4</span>.<span class="number">4</span></span>);
+      expect(sum(<span class="number">5</span>, <span class="number">1</span>)).to.equal(<span class="number">6</span>);</code></pre></li><li class="test pass fast"><h2>should have an array sum function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Sum%20should%20have%20an%20array%20sum%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(arraySum([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])).to.equal(<span class="number">15</span>);
+      expect(arraySum([<span class="number">10</span>, <span class="number">0</span>, -<span class="number">10</span>])).to.equal(<span class="number">0</span>);
+      expect(arraySum([])).to.equal(<span class="number">0</span>);</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Array%20Minimum">Minimum</a></h1><ul><li class="test pass fast"><h2>should have a number minimum function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Minimum%20should%20have%20a%20number%20minimum%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(minimum(<span class="number">6</span>, <span class="number">3</span>)).to.equal(<span class="number">3</span>);
+      expect(minimum(<span class="number"><span class="number">3</span>.<span class="number">3</span></span>, <span class="number"><span class="number">1</span>.<span class="number">1</span></span>)).to.equal(<span class="number"><span class="number">1</span>.<span class="number">1</span></span>);
+      expect(minimum(<span class="number">5</span>, <span class="number">1</span>)).to.equal(<span class="number">1</span>);</code></pre></li><li class="test fail"><h2>should have an array minimum function <a href="http://localhost:3000/?grep=Array%20Minimum%20should%20have%20an%20array%20minimum%20function" class="replay">‣</a></h2><pre class="error">AssertionError: expected 0 to equal 1
+    at Context.&lt;anonymous&gt; (http://localhost:3000/test/test.array.js:83:48)
+    at callFn (http://localhost:3000/libs/mocha.js:4496:21)
+    at Test.Runnable.run (http://localhost:3000/libs/mocha.js:4489:7)
+    at Runner.runTest (http://localhost:3000/libs/mocha.js:4892:10)
+    at http://localhost:3000/libs/mocha.js:4970:12
+    at next (http://localhost:3000/libs/mocha.js:4817:14)
+    at http://localhost:3000/libs/mocha.js:4827:7
+    at next (http://localhost:3000/libs/mocha.js:4766:23)
+    at http://localhost:3000/libs/mocha.js:4794:5
+    at timeslice (http://localhost:3000/libs/mocha.js:6218:27)</pre><pre style="display: none;"><code>expect(arrayMinimum([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])).to.equal(<span class="number">1</span>);
+      expect(arrayMinimum([<span class="number">10</span>, <span class="number">0</span>, -<span class="number">10</span>])).to.equal(-<span class="number">10</span>);
+      expect(arrayMinimum([])).to.equal(undefined);</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Array%20Ends%20In%20Period">Ends In Period</a></h1><ul><li class="test pass fast"><h2>should have a string ends in period function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Ends%20In%20Period%20should%20have%20a%20string%20ends%20in%20period%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(endsInPeriod("hello, world")).to.equal(false);
+      expect(endsInPeriod("hello, world.")).to.equal(true);
+      expect(endsInPeriod("what. now?")).to.equal(false);</code></pre></li><li class="test pass fast"><h2>should have an array ends in period filter function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Ends%20In%20Period%20should%20have%20an%20array%20ends%20in%20period%20filter%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(arrayEndsInPeriod(["yep.", "nope", "ok.", "nah"])).to.deep.equal(["yep.", "ok."]);
+      expect(arrayEndsInPeriod(["you", "are", "correct."])).to.deep.equal(["correct."]);
+      expect(arrayEndsInPeriod([])).to.deep.equal([]);</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Array%20Multiple%20of%203">Multiple of 3</a></h1><ul><li class="test pass fast"><h2>should have a multiple of 3 function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Multiple%20of%203%20should%20have%20a%20multiple%20of%203%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(multiple<span class="number">3</span>(<span class="number">20</span>)).to.equal(false);
+      expect(multiple<span class="number">3</span>(<span class="number">21</span>)).to.equal(true);
+      expect(multiple<span class="number">3</span>(<span class="number">22</span>)).to.equal(false);</code></pre></li><li class="test pass fast"><h2>should have an array multiple of 3 filter function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Array%20Multiple%20of%203%20should%20have%20an%20array%20multiple%20of%203%20filter%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(arrayMultiple<span class="number">3</span>([<span class="number">5</span>, <span class="number">10</span>, <span class="number">15</span>, <span class="number">20</span>, <span class="number">25</span>, <span class="number">30</span>])).to.deep.equal([<span class="number">15</span>, <span class="number">30</span>]);
+      expect(arrayMultiple<span class="number">3</span>([<span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">12</span>])).to.deep.equal([<span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">12</span>]);
+      expect(arrayMultiple<span class="number">3</span>([])).to.deep.equal([]);</code></pre></li></ul></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Object">Object</a></h1><ul><li class="suite"><h1><a href="http://localhost:3000/?grep=Object%20Frequency">Frequency</a></h1><ul><li class="test fail"><h2>should have a frequency counter function <a href="http://localhost:3000/?grep=Object%20Frequency%20should%20have%20a%20frequency%20counter%20function" class="replay">‣</a></h2><pre class="error">AssertionError: expected undefined to deeply equal { a: 1, b: 2, c: 3, d: 1 }
+    at Assertion.assertEqual (http://localhost:3000/libs/chai.js:1378:19)
+    at Assertion.ctx.(anonymous function) [as equal] (http://localhost:3000/libs/chai.js:3627:25)
+    at Context.&lt;anonymous&gt; (http://localhost:3000/test/test.object.js:11:18)
+    at callFn (http://localhost:3000/libs/mocha.js:4496:21)
+    at Test.Runnable.run (http://localhost:3000/libs/mocha.js:4489:7)
+    at Runner.runTest (http://localhost:3000/libs/mocha.js:4892:10)
+    at http://localhost:3000/libs/mocha.js:4970:12
+    at next (http://localhost:3000/libs/mocha.js:4817:14)
+    at http://localhost:3000/libs/mocha.js:4827:7
+    at next (http://localhost:3000/libs/mocha.js:4766:23)</pre><pre style="display: none;"><code><span class="comment">// You can put dot-notation objects and methods</span>
+      <span class="comment">// on separate lines to make them easier to read</span>
+      expect(frequency(["a", "b", "c", "c", "b", "c", "d"]))
+        .to.deep.equal({ a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span>, d: <span class="number">1</span>})
+      expect(frequency(["a", "b", "c", "d", "e", "f"]))
+        .to.deep.equal({ a: <span class="number">1</span>, b: <span class="number">1</span>, c: <span class="number">1</span>, d: <span class="number">1</span>, e: <span class="number">1</span>, f: <span class="number">1</span> })
+      expect(frequency(["a", "a", "a", "a", "a"]))
+        .to.deep.equal({ a: <span class="number">5</span> });
+      expect(frequency([]))
+        .to.deep.equal({});</code></pre></li><li class="test fail"><h2>should have a unique items function <a href="http://localhost:3000/?grep=Object%20Frequency%20should%20have%20a%20unique%20items%20function" class="replay">‣</a></h2><pre class="error">AssertionError: expected undefined to be an array
+    at Assertion.&lt;anonymous&gt; (http://localhost:3000/libs/chai.js:2287:30)
+    at Assertion.ctx.(anonymous function) (http://localhost:3000/libs/chai.js:3627:25)
+    at Context.&lt;anonymous&gt; (http://localhost:3000/test/test.object.js:27:21)
+    at callFn (http://localhost:3000/libs/mocha.js:4496:21)
+    at Test.Runnable.run (http://localhost:3000/libs/mocha.js:4489:7)
+    at Runner.runTest (http://localhost:3000/libs/mocha.js:4892:10)
+    at http://localhost:3000/libs/mocha.js:4970:12
+    at next (http://localhost:3000/libs/mocha.js:4817:14)
+    at http://localhost:3000/libs/mocha.js:4827:7
+    at next (http://localhost:3000/libs/mocha.js:4766:23)</pre><pre style="display: none;"><code>expect(unique(["d", "b", "c", "c", "b", "c", "a"]))
+        .to.include.members(["a", "b", "c", "d"]);
+      expect(unique(["a", "b", "c", "d", "e", "f"]))
+        .to.include.members(["a", "b", "c", "d", "e", "f"]);
+      expect(unique(["a", "a", "a", "a", "a"]))
+        .to.deep.equal(["a"]);
+      expect(unique([]))
+        .to.deep.equal([]);</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Object%20Tripler">Tripler</a></h1><ul><li class="test pass fast"><h2>should have a tripler function<span class="duration">1ms</span> <a href="http://localhost:3000/?grep=Object%20Tripler%20should%20have%20a%20tripler%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(tripler(<span class="number">3</span>)).to.equal(<span class="number">9</span>);
+      expect(tripler(<span class="number">10</span>)).to.equal(<span class="number">30</span>);
+      expect(tripler(-<span class="number">5</span>)).to.equal(-<span class="number">15</span>);</code></pre></li><li class="test pass fast"><h2>should have an object tripler function<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Object%20Tripler%20should%20have%20an%20object%20tripler%20function" class="replay">‣</a></h2><pre style="display: none;"><code>expect(objectTripler({ a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span> }))
+        .to.deep.equal({ a: <span class="number">3</span>, b: <span class="number">6</span>, c: <span class="number">9</span> });
+      expect(objectTripler({ x: -<span class="number">10</span>, y: <span class="number">30</span>, z: <span class="number">0</span> }))
+        .to.deep.equal({ x: -<span class="number">30</span>, y: <span class="number">90</span>, z: <span class="number">0</span> });
+      expect(objectTripler({}))
+        .to.deep.equal({});</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Object%20Extend">Extend</a></h1><ul><li class="test pass fast"><h2>should be okay with objects without conflicts<span class="duration">0ms</span> <a href="http://localhost:3000/?grep=Object%20Extend%20should%20be%20okay%20with%20objects%20without%20conflicts" class="replay">‣</a></h2><pre style="display: none;"><code>expect(extend({ a: <span class="number">1</span>, b: <span class="number">2</span> }, { c: <span class="number">3</span>, d: <span class="number">4</span> }))
+        .to.deep.equal({ a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span>, d: <span class="number">4</span> });
+      expect(extend({ a: <span class="number">1</span>, b: <span class="number">2</span> }, {}))
+        .to.deep.equal({ a: <span class="number">1</span>, b: <span class="number">2</span> });
+      expect(extend({}, { c: <span class="number">3</span> }))
+        .to.deep.equal({ c: <span class="number">3</span> });</code></pre></li><li class="test fail"><h2>should be okay with objects WITH conflicts <a href="http://localhost:3000/?grep=Object%20Extend%20should%20be%20okay%20with%20objects%20WITH%20conflicts" class="replay">‣</a></h2><pre class="error">AssertionError: expected { a: 1, b: 3, c: 4 } to deeply equal { a: 1, b: 2, c: 4 }
+    at Assertion.assertEqual (http://localhost:3000/libs/chai.js:1378:19)
+    at Assertion.ctx.(anonymous function) [as equal] (http://localhost:3000/libs/chai.js:3627:25)
+    at Context.&lt;anonymous&gt; (http://localhost:3000/test/test.object.js:85:18)
+    at callFn (http://localhost:3000/libs/mocha.js:4496:21)
+    at Test.Runnable.run (http://localhost:3000/libs/mocha.js:4489:7)
+    at Runner.runTest (http://localhost:3000/libs/mocha.js:4892:10)
+    at http://localhost:3000/libs/mocha.js:4970:12
+    at next (http://localhost:3000/libs/mocha.js:4817:14)
+    at http://localhost:3000/libs/mocha.js:4827:7
+    at next (http://localhost:3000/libs/mocha.js:4766:23)</pre><pre style="display: none;"><code>expect(extend({ a: <span class="number">1</span>, b: <span class="number">2</span> }, { b: <span class="number">3</span>, c: <span class="number">4</span> }))
+        .to.deep.equal({ a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">4</span> });
+      expect(extend({ a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span> }, { b: <span class="number">9</span> }))
+        .to.deep.equal({ a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span> });</code></pre></li></ul></li><li class="suite"><h1><a href="http://localhost:3000/?grep=Object%20Pluck">Pluck</a></h1><ul><li class="test fail"><h2>should work correctly <a href="http://localhost:3000/?grep=Object%20Pluck%20should%20work%20correctly" class="replay">‣</a></h2><pre class="error">AssertionError: expected undefined to deeply equal [ 1, 3, 5 ]
+    at Assertion.assertEqual (http://localhost:3000/libs/chai.js:1378:19)
+    at Assertion.ctx.(anonymous function) [as equal] (http://localhost:3000/libs/chai.js:3627:25)
+    at Context.&lt;anonymous&gt; (http://localhost:3000/test/test.object.js:99:18)
+    at callFn (http://localhost:3000/libs/mocha.js:4496:21)
+    at Test.Runnable.run (http://localhost:3000/libs/mocha.js:4489:7)
+    at Runner.runTest (http://localhost:3000/libs/mocha.js:4892:10)
+    at http://localhost:3000/libs/mocha.js:4970:12
+    at next (http://localhost:3000/libs/mocha.js:4817:14)
+    at http://localhost:3000/libs/mocha.js:4827:7
+    at next (http://localhost:3000/libs/mocha.js:4766:23)</pre><pre style="display: none;"><code>expect(pluck([ { a: <span class="number">1</span>, b: <span class="number">2</span> }, { a: <span class="number">3</span> }, { a: <span class="number">4</span>, c: <span class="number">5</span> }], "a"))
+        .to.deep.equal([<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>]);</code></pre></li></ul></li></ul></li></ul></div>
+
+    <script>
+      mocha.setup({
+        ui: "bdd"
+      }); 
+
+      var assert = chai.assert;
+      var expect = chai.expect;
+    </script>
+
+    <!-- add testing files between here -->
+
+    <script src="./The Iron Yard Test Runner_files/array.js"></script>
+    <script src="./The Iron Yard Test Runner_files/test.array.js"></script>
+
+    <script src="./The Iron Yard Test Runner_files/object.js"></script>
+    <script src="./The Iron Yard Test Runner_files/test.object.js"></script>
+
+    <!-- add testing files between here -->
+
+    <script>
+      var z = mocha.run();
+      console.log(z)
+    </script>
+
+  
+</body></html>
