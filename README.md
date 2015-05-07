@@ -1,58 +1,61 @@
-# html-intro-surf-paddle
+## HTML Layout and Positioning
 
-## Description
-As a developer on the web, you will sometimes be tasked with creating an html page simply from an image file.  In this assignment, you&#x27;ll be taking an image and turning it into a functioning website.
+### Description
 
-## Objectives
+One of the basic, foundational skills in being a professional web developer is the translation of a designer's mockup image into a webpage with HTML and CSS.
 
-### Learning Objectives
+At the same time, we're also going to get into the habit of frequently creating git commits as checkpoints.
 
-After completing this assignment, you should…
+**This assignment is due at 3am, Monday, February 2nd.**
 
-Upon completion of this assignment, you should:
+### Objectives
 
-* Understand the propery use and function of html tags.
-* Understand and able to leverage the many css properties to style content.
-* Use CSS to create layout for the HTML page.
+##### Learning Objectives
 
+After completing this assignment, you should be comfortable with
 
-### Performance Objectives
+* Translating images/PSDs to HTML and CSS
+* Hosting static pages on GitHub
+* Using git on the command line
+* Best practices for committing frequently
+
+##### Performance Objectives
 
 After completing this assignment, you be able to effectively use
 
-* Use sectioning html tags
-* Effectively utilize some common css layout strategies (float or inline-block)
-* Able to leverage and understand the use of `absolute` vs `relative` in context of positioning.
-* The menu items need to also have differing states based on a hover, and although not articulated in the provided image, they need to be styled.
+* Chrome developer tools
+* GitHub pages
+* Terminal
+* git
+* Your text editor of choice
 
+### Details
 
-## Details
+##### Deliverables
 
-### Deliverables
+* A GitHub pages-hosted repo containing
+    * `index.html`
+    * `index.css`
+    * All images in an `assets/images` folder
 
-* A repo containing at least:
-  * `index.html`
-  * 'styles.css'
-  * 'images/'
+##### Requirements
 
+* Valid HTML
+* Valid CSS
+* At least one git commit (with a message) every hour that you're working on this project
+            
+### Normal Mode
 
+Using HTML and CSS, re-create the included image (`Iron Yard Blog Layout.png`) as a webpage. Don't worry about the text content (feel free to use an ipsum generator), but use the original images and *make your best effort* to match the dimensions and styles of original page to yours.
 
-### Requirements
+**Note**: The "Never miss a post" callout stays in the bottom right corner of the screen whenever you scroll. 
+            
+### Hard Mode
 
-* The resulting web page cannot just be an image of the assignment centered on the page :)
+Same as normal mode, but definitely match the styling to the blog post. You can check on how things are going with the Perfect Pixel Chrome extension. Also, make all the links and images behave the same as the actual page.
+            
+### Additional Resources
 
-
-## Normal Mode
-
-Using the image located `assets/surf-and-paddle.png`, create a html document using html and css to look like below, but be a function website:
-
-![Surf and paddle image](assets/surf-and-paddle.png)
-
-## Hard Mode
-
-Complete Normal Mode then make the website fully responsive and adhering to this [responsive wireframe](assets/surf-and-paddle-responsive.pdf).
-
-## Additional Resources
-
-* Read [Learn Layout](http://learnlayout.com/)
-* Read [HTML tag content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
+* [Original blog post](http://dc.theironyard.com/post/103666168283/here-we-go)
+* [Perfect Pixel Chrome extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
+* [Meet the Ipsums](http://meettheipsums.com/)
